@@ -1,0 +1,168 @@
+/* Стили для десктопной версии */
+
+@media only screen and (min-width: 768px) {
+
+    body{
+    background-color: black;
+    font-family: 'Chivo Mono', monospace;
+    width: 100%;
+    max-width: 1200px;
+    padding: 35px 15px 0 15px;
+    margin: 0 auto 130px auto;
+    
+    }
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        font-family: 'Chivo Mono', monospace;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+        font-family: 'Chivo Mono', monospace;
+      }
+      
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+
+      .img1 {
+        width: 30%;
+        height: 30%;
+        float: left;
+        margin-right: 20px; 
+        float: left;
+        margin-right: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .text {
+        float: right;
+        overflow: hidden;
+      }
+    
+      .header{
+        width: 100%;
+        max-width: 1200px;
+        padding: 35px 15px 0 15px;
+        margin: 0 auto 130px auto;
+        
+      }
+
+      .wrapper {
+        height: 30vh;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: auto;
+        grid-gap: 2vw;
+        grid-column-gap: 10px;
+        
+      }
+      
+      .logo {
+        display: inline;
+        align-items: center;
+        margin-inline-end: 10px
+      }
+    
+      .name {
+        display: inline;
+        color: rgb(255, 255, 255);
+        font-family: 'Chivo Mono', monospace;
+        margin-inline-end: 10px;
+        background-color: black;
+        text-align: center;
+        font-size: 2rem;
+      }
+    
+    }
+
+          /* .logo {
+        display: inline;
+        align-items: left;
+        margin-inline-end: 20px
+      }
+      
+      .header__logo img {
+        position: left;
+        margin-right: 10px;
+        
+      }
+      
+      h1 {
+        display: inline;
+        color: rgb(255, 255, 255);
+        font-family: 'Chivo Mono', monospace;
+        margin-inline-end: 10px
+        
+        
+      } */
+
+/* Стили для мобильной версии */
+  @media only screen and (max-width: 767px) {
+
+    .header {
+      padding: 10px;
+      margin-bottom: 50px;
+    }
+    
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 5vw;
+      grid-column-gap: 0;
+    }
+    
+    .logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+      display: block;
+      text-align: center;
+    }
+    
+    .name {
+      margin-right: 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .img1 {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 10px;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .text {
+      float: none;
+      overflow: visible;
+    }
+  }
+  
+  
